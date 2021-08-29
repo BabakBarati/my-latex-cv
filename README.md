@@ -1,4 +1,4 @@
 # Babak Barati's CV
-The resume is not ready yet. To find my last resume please check [my website](https://bbarati.ir) or directly [download it here](https://bbarati.ir/Babak_Barati_CV_2020-08-17.pdf).
+This is my latest version of resume, updated on August 29, 2021
 
 My resume is based on [AltaCV v1.3.2](https://github.com/liantze/AltaCV)
