@@ -1,41 +1,12 @@
-%%%%%%%%%%%%%%%%%
-% This is an sample CV template created using altacv.cls
-% (v1.3, 10 May 2020) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
-%
-%% It may be distributed and/or modified under the
-%% conditions of the LaTeX Project Public License, either version 1.3
-%% of this license or (at your option) any later version.
-%% The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.3 or later is part of all distributions of LaTeX
-%% version 2003/12/01 or later.
-%%%%%%%%%%%%%%%%
 
-%% If you need to pass whatever options to xcolor
 \PassOptionsToPackage{dvipsnames}{xcolor}
 
-%% If you are using \orcid or academicons
-%% icons, make sure you have the academicons
-%% option here, and compile with XeLaTeX
-%% or LuaLaTeX.
-% \documentclass[10pt,a4paper,academicons]{altacv}
-
-%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
-% \documentclass[10pt,a4paper,normalphoto]{altacv}
-
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
-%% AltaCV uses the fontawesome5 and academicons fonts
-%% and packages.
-%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
-% Change the page layout if you need to
 \geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 
-% The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
 
-% Change the font if you want to, depending on whether
-% you're using pdflatex or xelatex/lualatex
 \ifxetexorluatex
   % If using xelatex or lualatex:
   \setmainfont{Roboto Slab}
@@ -49,7 +20,6 @@
   \renewcommand{\familydefault}{\sfdefault}
 \fi
 
-% Change the colours if you want to
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
 \definecolor{DarkPastelRed}{HTML}{450808}
@@ -64,7 +34,7 @@
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
-% Change some fonts, if necessary
+% fonts
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
 \renewcommand{\personalinfofont}{\footnotesize}
 \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
@@ -76,40 +46,23 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% sample.bib contains your publications
-\addbibresource{sample.bib}
 
 \begin{document}
 \name{Babak Barati}
 \tagline{Software Engineer}
-%% You can add multiple photos on the left or right
 \photoR{3cm}{pic}
-% \photoL{2.5cm}{Yacht_High,Suitcase_High}
 
 \personalinfo{%
-  % Not all of these are required!
   \email{babak@bbarati.ir}
   \phone{\href{tel://00905528452181}{+90 (552) 845-2181}}
   \location{Istanbul, Turkey}
   \homepage{bbarati.ir}
-  %\twitter{@twitterhandle}
   \linkedin{babak-barati}
   \github{BabakBarati}
   \printinfo{\faTelegram}{Babak_Barati}[https://telegram.me/Babak_Barati]
-  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
-  % \orcid{0000-0000-0000-0000}
-  %% You can add your own arbtrary detail with
-  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
-  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
-  %% Or you can declare your own field with
-  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
-  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
-  % \gitlab{your_id}
 }
 
 \makecvheader
-%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
-% \AtBeginEnvironment{itemize}{\small}
 
 %% Set the left/right column width ratio to 6:4.
 \columnratio{0.6}
@@ -161,19 +114,6 @@
  \item\textbf{Technology Stack:} Flutter, MongoDB, Firebase, ASP .NET Core MVC
 \end{itemize}
 
-
-%\medskip
-% \cvsection{A Day of My Life}
-% \wheelchart{1.5cm}{0.5cm}{%
-%   6/8em/accent!30/{Sleep,\\beautiful sleep},
-%   3/8em/accent!40/Hopeful novelist by night,
-%   8/8em/accent!60/Daytime job,
-%   2/10em/accent/Sports and relaxation,
-%   5/6em/accent!20/Spending time with family
-% }
-% 
-% \newpage
-
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
 \switchcolumn
@@ -183,18 +123,6 @@
 \begin{quote}
 ``I am a software engineer with more than 9 years of experience, interested in developing web services,  software architecture and methodologies.''
 \end{quote}
-
-% \cvsection{Most Proud of}
-% 
-% \cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
-% 
-% \divider
-% 
-% \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-% 
-% \divider
-% 
-% \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
 
 \cvsection{Skills}
 \cvskill{ASP .NET Core MVC}{4}
@@ -228,8 +156,7 @@
 \cvtag{English: Fluent}
 \cvtag{Persian: Native}
 
-%% Yeah I didn't spend too much time making all the
-%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% Use \smallskip, \medskip,
 %% \bigskip, \vpsace etc to make ajustments.
 \medskip
 
